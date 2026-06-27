@@ -4,27 +4,46 @@ public class Q852_Peak_Index_in_a_Mountain_Array {
 
     public int peakIndexInMountainArray(int[] arr) {
 
-        int a = 0;
-        int b = arr.length-1;
+//        int a = 0;
+//        int b = arr.length-1;
+//
+//        while(a <= b){
+//
+//            int mid = a + (b - a)/2;
+//
+//            if(arr[mid] > arr[mid - 1] && arr[mid] > arr[mid +1]){
+//                return mid;
+//            }
+//
+//            if(arr[mid - 1] < arr[mid] && arr[mid + 1] > arr[mid]){
+//                a = mid;
+//            }
+//
+//            if(arr[mid - 1] > arr[mid] && arr[mid + 1] < arr[mid]){
+//                b = mid;
+//            }
+//
+//        }
+//
+//        return 0;
 
-        while(a <= b){
+        // More good method
 
-            int mid = a + (b - a)/2;
+        int start = 0;
+        int end = arr.length - 1;
 
-            if(arr[mid] > arr[mid - 1] && arr[mid] > arr[mid +1]){
-                return mid;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] > arr[mid+1]) {
+
+                end = mid;
             }
+            else {
 
-            if(arr[mid - 1] < arr[mid] && arr[mid + 1] > arr[mid]){
-                a = mid;
+                start = mid + 1;
             }
-
-            if(arr[mid - 1] > arr[mid] && arr[mid + 1] < arr[mid]){
-                b = mid;
-            }
-
         }
 
-        return 0;
+        return start;
     }
 }
