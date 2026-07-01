@@ -1,7 +1,7 @@
-package submit;
+package ProblemSet;
 
 import java.util.*;
-public class Main {
+public class Q231A_Team {
 
     public static void main(String[] args) {
 
