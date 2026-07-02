@@ -1,7 +1,8 @@
-package submit;
+package ProblemSet;
 
-import java.util.*;
-public class Main {
+import java.util.Scanner;
+
+public class Q282A_Bit {
 
     public static void main(String[] args) {
 
