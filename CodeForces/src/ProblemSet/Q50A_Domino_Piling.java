@@ -1,7 +1,8 @@
-package submit;
+package ProblemSet;
 
-import java.util.*;
-public class Main {
+import java.util.Scanner;
+
+public class Q50A_Domino_Piling {
 
     public static void main(String[] args) {
 
