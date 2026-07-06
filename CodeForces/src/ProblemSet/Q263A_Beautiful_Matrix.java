@@ -1,8 +1,8 @@
-package submit;
+package ProblemSet;
 
 import java.util.*;
 
-public class Main {
+public class Q263A_Beautiful_Matrix {
 
     public static void main(String[] args) {
 
