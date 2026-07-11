@@ -1,6 +1,6 @@
 package ProblemSet;
 
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Q791A_Bear_and_Big_Brother {
 
