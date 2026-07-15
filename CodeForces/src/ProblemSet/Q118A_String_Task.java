@@ -4,9 +4,6 @@ import java.util.*;
 
 public class Q118A_String_Task {
 
-    import java.util.*;
-
-    public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             String s = sc.next();
@@ -24,5 +21,5 @@ public class Q118A_String_Task {
 
             System.out.print(ans);
         }
-    }
+
 }
