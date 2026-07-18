@@ -1,6 +1,6 @@
 package ProblemSet;
 
-import java.util.Scanner;
+import java.util.Scanner;//o
 
 public class Q69A_Young_physicist {
 
