@@ -16,6 +16,6 @@ public class Q200B_Drinks {
 
         System.out.println(sum / n);
 
-        sc.close();
+        sc.close();//j
     }
 }
