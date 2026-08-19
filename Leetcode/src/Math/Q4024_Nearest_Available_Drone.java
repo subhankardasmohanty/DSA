@@ -1,0 +1,29 @@
+package Math;
+
+public class Q4024_Nearest_Available_Drone {
+
+    public int nearestDrone(int[][] drones, int[] target) {
+
+        int ans = -1;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < drones.length; i++) {
+
+            int x = drones[i][0];
+            int y = drones[i][1];
+            int range = drones[i][2];
+
+            int distance = Math.abs(x - target[0]) + Math.abs(y - target[1]);
+
+            if (distance <= range) {
+
+                if (distance < min) {
+                    min = distance;
+                    ans = i;
+                }
+            }
+        }
+
+        return ans;
+    }
+}
