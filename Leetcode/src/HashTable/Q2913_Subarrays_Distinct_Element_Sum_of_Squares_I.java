@@ -1,4 +1,4 @@
-package ProblemSet;
+package HashTable;
 
 import java.util.*;
 
