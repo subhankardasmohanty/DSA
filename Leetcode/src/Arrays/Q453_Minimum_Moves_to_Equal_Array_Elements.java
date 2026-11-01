@@ -1,0 +1,17 @@
+package Arrays;
+
+public class Q453_Minimum_Moves_to_Equal_Array_Elements {
+
+    public int minMoves(int[] nums) {
+
+        int min = nums[0];
+        int sum = 0;
+
+        for (int num : nums) {
+            min = Math.min(min, num);
+            sum += num;
+        }
+
+        return sum - (min * nums.length);
+    }
+}
